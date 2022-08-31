@@ -1,11 +1,13 @@
-<div class="card m-3">
-  <div class="card-body">
-    <h3>You:<%= params[:question] %></h3>
+<div class="m-3">
+  <div class="alert alert-primary" role="alert">
+    <h3>😊You:<%= params[:question] %></h3>
   </div>
 </div>
-<div class="card m-3">
-  <div class="card-body">
-    <h3>Coach: <%= @answer %></h3>
+<div class="m-3">
+  <div class="alert alert-danger" role="alert">
+    <h3>😡Coach: <%= @answer %></h3>
   </div>
 </div>
-<%= link_to "Ask him again!", "/ask" %>
+<div class="m-3">
+  <%= link_to "Ask him again!", "/ask" %>
+</div>
